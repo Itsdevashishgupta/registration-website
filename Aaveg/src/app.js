@@ -5,7 +5,7 @@ const hbs=require("hbs");
 const app=express();
 const port=process.env.PORT || 3000;
 //setting the path
-const staticpath=path.join(__dirname,"../public/home");
+const staticpath=path.join(__dirname,"../public");
 const templatepath=path.join(__dirname,"../templates/views");
 const partialpath=path.join(__dirname,"../templates/partials");
 //middlewares
@@ -21,7 +21,7 @@ hbs.registerPartials(partialpath)
 app.get("/",(req,res)=>{
        res.render("index");
 })
-app.get("/contact",(req,res)=>{
+app.get("/contact",(req,res)=>{ 
        res.render("contact");
 })
 

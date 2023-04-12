@@ -141,3 +141,31 @@ a {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
+
+
+  /*contact*/
+
+  .contact-style {
+  margin: 10rem 0;
+}
+
+label {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.form-control {
+  padding: 2rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+#emailHelp,
+::placeholder {
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  font-weight: 600;
+}
